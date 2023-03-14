@@ -50,49 +50,44 @@ switch answer
 end
 
 disp('Who is your favorite of these artists?'); %% QUESTION 4
-answer = input('a) Lizzo b) Steve Aoki c) Lewis Capaldi d) Sia e) A Boogie ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+if app.LizzoButton == true
+       score_harry = score_harry + 1;
+elseif app.SteveAokiButton == true
+       score_louis = score_louis + 1;
+elseif app.LewisCapaldiButton == true
+       score_niall = score_niall + 1;
+elseif app.SiaButton == true
+       score_zayn = score_zayn + 1;
+else app.ABoogieButton == true
+     score_liam = score_liam + 1;
 end
 
 disp('Which would you rather do in your free time?'); %% QUESTION 5
-answer = input('a) Pilates & meditation b) Play soccer c) Golf d) Draw or paint e) Go out ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+if app.Pilatesmeditation == true
+       score_harry = score_harry + 1;
+elseif app.PlaysoccerButton == true
+       score_louis = score_louis + 1;
+elseif app.GolfButton == true
+       score_niall = score_niall + 1;
+elseif app.DraworpaintButton == true
+       score_zayn = score_zayn + 1;
+else app.GooutButton == true
+     score_liam = score_liam + 1;
 end
 
 disp('Which role do you have in your friend group?'); %% QUESTION 6
-answer = input('a) Mom friend b) Class clown c) Crazy uncle d) The one people go to for advice e) Dad friend ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+if app.MomfriendButton == true
+       score_harry = score_harry + 1;
+elseif app.ClassclownButton == true
+       score_louis = score_louis + 1;
+elseif app.CrazyuncleBotton == true
+       score_niall = score_niall + 1;
+elseif app.TheonepeoplegotoforadviseButton == true
+       score_zayn = score_zayn + 1;
+else app.DadfriendButton == true
+     score_liam = score_liam + 1;
 end
+
 
 disp('What is your favorite color?'); %% QUESTION 7
 answer = input('a) Green b) Blue c) Orange d) Yellow e) Red ','s');
