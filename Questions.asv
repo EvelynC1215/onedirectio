@@ -50,17 +50,18 @@ switch answer
 end
 
 disp('Who is your favorite of these artists?'); %% QUESTION 4
-if app.LizzoButton == true
-       score_harry = score_harry + 1;
-elseif app.SteveAokiButton == true
-       score_louis = score_louis + 1;
-elseif app.LewisCapaldiButton == true
-       score_niall = score_niall + 1;
-elseif app.SiaButton == true
-       score_zayn = score_zayn + 1;
-else app.SteveAokiButton == true
-     score_liam = score_liam + 1;
-
+answer = input('a) Lizzo b) Steve Aoki c) Lewis Capaldi d) Sia e) A Boogie ','s');
+switch answer
+    case 'a'
+        score_harry = score_harry + 1;
+    case 'b'
+        score_louis = score_louis + 1;
+    case 'c'
+        score_niall = score_niall + 1;
+    case 'd'
+        score_zayn = score_zayn + 1;
+    case 'd'
+        score_liam = score_liam + 1;
 end
 
 disp('Which would you rather do in your free time?'); %% QUESTION 5
@@ -93,35 +94,46 @@ switch answer
         score_liam = score_liam + 1;
 end
 
-disp('What is your favorite color?'); %% QUESTION 7
-answer = input('a) Green b) Blue c) Orange d) Yellow e) Red ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+
+%% QUESTION 7
+if app.GreenButton == true
+    score_harry = score_harry + 1;
+elseif app.BlueButton == true
+    score_louis = score_louis + 1;
+elseif app.OrangeButton == true
+    score_niall = score_niall + 1;
+elseif app.YellowButton == true
+    score_zayn = score_zayn + 1;
+else app.RedButton == true
+    score_liam = score_liam + 1;
 end
 
-disp('Which pet would you rather have?'); %% QUESTION 8
-answer = input('a) Calico kitten b) Australian Shepard puppy c) Golden retriever puppy d) Black kitten e) Beagle puppy ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 8
+if app.CalicokittenButton == true
+    score_harry = score_harry + 1;
+elseif AustralianshepardpuppyButton == true
+    score_louis = score_louis + 1;
+elseif app.GoldenretrieverpuppyButton == true
+    score_niall = score_niall + 1;
+elseif app.BlackkittenButton == true
+    score_zayn = score_zayn + 1;
+else app.BeaglepuppynButton == true
+    score_liam = score_liam + 1;
 end
+
+%%QUESTION 9
+if app.Button == true
+    score_harry = score_harry + 1;
+elseif AustralianshepardpuppyButton == true
+    score_louis = score_louis + 1;
+elseif app.GoldenretrieverpuppyButton == true
+    score_niall = score_niall + 1;
+elseif app.BlackkittenButton == true
+    score_zayn = score_zayn + 1;
+else app.BeaglepuppynButton == true
+    score_liam = score_liam + 1;
+end
+
 
 disp('If you werent studying CLPS, what else would you want to study at Brown?'); %% QUESTION 9
 answer = input('a) Literary arts b) MCM c) History d) VISA e) APMA Econ with an entrepeneurship certificate ','s');
