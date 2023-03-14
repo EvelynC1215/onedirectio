@@ -4,125 +4,127 @@ score_niall = 0;
 score_zayn = 0;
 score_liam = 0;
 
-disp('What is your favorite food?'); %% QUESTION 1
-answer = input('a) Fruit & veggies (anything natural!) b) Fast food c) Who needs food when you have beer? d) Pastaaaaa e) Mexican food ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 1
+if app.fruitsandveggiesButton==true
+       score_harry = score_harry + 1;
+elseif app.fastfoodButton==true
+       score_louis = score_louis + 1;
+elseif app.WhoneedsfoodwhenyouhavebeerButton==true
+       score_niall = score_niall + 1;
+elseif app.pastaButton==true
+       score_zayn = score_zayn + 1;
+else app.MexicanfoodButton==true
+       score_liam = score_liam + 1;
 end
 
-disp('What is your favorite season?'); %% QUESTION 2
-answer = input('a) Summer b) Winter c) Spring d) Fall e) I like them all the same! ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 4;
+%%QUESTION 2
+ if app.summerButton==true
+       score_harry = score_harry + 1;
+ elseif app.winterButton==true
+       score_louis = score_louis + 1;
+ elseif app.springButton==true
+       score_niall = score_niall + 1;
+ elseif app.fallButton==true
+       score_zayn = score_zayn + 1;
+ else app.IlikethemallButton==true;
+       score_liam = score_liam + 4;
+ end
+
+%%QUESTION 3
+if app.iceskatingButton==true
+       score_harry = score_harry + 1;
+elseif app.goingforadriveButton==true
+       score_louis = score_louis + 1;
+elseif app.stayinginandplayinggamesButton==true
+       score_niall = score_niall + 1;
+elseif app.fancydinnerdateButton==true
+       score_zayn = score_zayn + 1;
+else app.goingtoacarnivalButton==true;
+       score_liam = score_liam + 1;
 end
 
-disp('What would your ideal first date be?'); %% QUESTION 3
-answer = input('a) Ice skating b) Going for a drive c) Staying in and playing games d) Going out to a fancy dinner e) Going to a carnival ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+
+
+
+
+%%QUESTION 4
+if app.LizzoButton == true
+      score_harry = score_harry + 1;
+elseif app.SteveAokiButton == true
+      score_louis = score_louis + 1;
+elseif app.LewisCapaldiButton == true
+      score_niall = score_niall + 1;
+elseif app.SiaButton == true
+      score_zayn = score_zayn + 1;
+else app.ABoogieButton == true
+    score_liam = score_liam + 1;
 end
 
-disp('Who is your favorite of these artists?'); %% QUESTION 4
-answer = input('a) Lizzo b) Steve Aoki c) Lewis Capaldi d) Sia e) A Boogie ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 5
+if app.Pilatesmeditation == true
+      score_harry = score_harry + 1;
+elseif app.PlaysoccerButton == true
+      score_louis = score_louis + 1;
+elseif app.GolfButton == true
+      score_niall = score_niall + 1;
+elseif app.DraworpaintButton == true
+      score_zayn = score_zayn + 1;
+else app.GooutButton == true
+    score_liam = score_liam + 1;
 end
 
-disp('Which would you rather do in your free time?'); %% QUESTION 5
-answer = input('a) Pilates & meditation b) Play soccer c) Golf d) Draw or paint e) Go out ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 6
+if app.MomfriendButton == true
+      score_harry = score_harry + 1;
+elseif app.ClassclownButton == true
+      score_louis = score_louis + 1;
+elseif app.CrazyuncleBotton == true
+      score_niall = score_niall + 1;
+elseif app.TheonepeoplegotoforadviseButton == true
+      score_zayn = score_zayn + 1;
+else app.DadfriendButton == true
+    score_liam = score_liam + 1;
 end
 
-disp('Which role do you have in your friend group?'); %% QUESTION 6
-answer = input('a) Mom friend b) Class clown c) Crazy uncle d) The one people go to for advice e) Dad friend ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 7
+if app.GreenButton == true
+    score_harry = score_harry + 1;
+elseif app.BlueButton == true
+    score_louis = score_louis + 1;
+elseif app.OrangeButton == true
+    score_niall = score_niall + 1;
+elseif app.YellowButton == true
+    score_zayn = score_zayn + 1;
+else app.RedButton == true
+    score_liam = score_liam + 1;
 end
 
-disp('What is your favorite color?'); %% QUESTION 7
-answer = input('a) Green b) Blue c) Orange d) Yellow e) Red ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 8
+if app.CalicokittenButton == true
+    score_harry = score_harry + 1;
+elseif AustralianshepardpuppyButton == true
+    score_louis = score_louis + 1;
+elseif app.GoldenretrieverpuppyButton == true
+    score_niall = score_niall + 1;
+elseif app.BlackkittenButton == true
+    score_zayn = score_zayn + 1;
+else app.BeaglepuppynButton == true
+    score_liam = score_liam + 1;
 end
 
-disp('Which pet would you rather have?'); %% QUESTION 8
-answer = input('a) Calico kitten b) Australian Shepard puppy c) Golden retriever puppy d) Black kitten e) Beagle puppy ','s');
-switch answer
-    case 'a'
-        score_harry = score_harry + 1;
-    case 'b'
-        score_louis = score_louis + 1;
-    case 'c'
-        score_niall = score_niall + 1;
-    case 'd'
-        score_zayn = score_zayn + 1;
-    case 'd'
-        score_liam = score_liam + 1;
+%%QUESTION 9
+if app.LiteraryartsButton == true
+    score_harry = score_harry + 1;
+elseif app.MCMButton == true
+    score_louis = score_louis + 1;
+elseif app.HistoryButton == true
+    score_niall = score_niall + 1;
+elseif app.VISAButton == true
+    score_zayn = score_zayn + 1;
+else app.APMAEconwithanentrepeneurshipcertificateButton == true
+    score_liam = score_liam + 1;
 end
+
 
 disp('If you werent studying CLPS, what else would you want to study at Brown?'); %% QUESTION 9
 answer = input('a) Literary arts b) MCM c) History d) VISA e) APMA Econ with an entrepeneurship certificate ','s');
