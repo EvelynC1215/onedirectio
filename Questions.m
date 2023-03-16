@@ -130,7 +130,9 @@ elseif score_niall > score_harry & score_niall > score_louis & score_niall > sco
    disp('Niall Horan!');
 elseif score_zayn > score_harry & score_zayn > score_niall & score_zayn > score_liam & score_zayn > score_louis;
    disp('Zayn Malik!');
-else score_liam > score_harry & score_liam > score_niall & score_liam > score_zayn & score_liam > score_louis;
+elseif score_liam > score_harry & score_liam > score_niall & score_liam > score_zayn & score_liam > score_louis;
    disp('Liam Payne!');
+else score_harry==score_louis | score_harry==score_niall|score_harry==score_zayne|score_harry==score_liam|score_louis==score+niall|score+louis==score_zayn|score_louis==score_liam|score_niall==score_zayne|score_niall==score_liam|score_zayne==score_liam;
+    disp('Taylor Swift')
 end
 
