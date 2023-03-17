@@ -1,3 +1,3 @@
 
-[y, Fs] = audioread('carolina.mov');
+[y, Fs] = audioread(['carolina.mov']);
 sound(y, Fs);
